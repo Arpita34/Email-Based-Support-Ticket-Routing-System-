@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TicketAI — Smart Support Ticket Router</title>
+  <meta name="description" content="AI-powered email support ticket classification system using NLP and Machine Learning. Automatically routes emails to Billing, Technical, Account, or General support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🎫</span>
+        <span class="logo-text">Ticket<span class="logo-accent">AI</span></span>
+      </div>
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        Model Active
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="hero-title">
+          Email Support Ticket
+          <span class="gradient-text">Router</span>
+        </h1>
+        <p class="hero-subtitle">
+          Paste any customer email and our AI instantly classifies it, detects priority,
+          and routes it to the right support team — powered by NLP &amp; Machine Learning.
+        </p>
+      </section>
+
+      <!-- Input Card -->
+      <div class="card input-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <span class="card-icon">✉️</span>
+            Classify Email
+          </h2>
+          <span class="char-count" id="charCount">0 / 5000</span>
+        </div>
+
+        <textarea
+          id="emailInput"
+          class="email-textarea"
+          placeholder="Paste the customer's email text here…&#10;&#10;e.g. 'I was charged twice for my subscription this month…'"
+          maxlength="5000"
+          aria-label="Email text input"
+          spellcheck="true"
+        ></textarea>
+
+        <!-- Quick Fill Buttons -->
+        <div class="quick-fill-section">
+          <span class="quick-fill-label">Quick Examples:</span>
+          <div class="quick-fill-buttons">
+            <button class="quick-btn quick-billing" id="quickBilling"
+              data-text="I was charged twice for my subscription this month. Please refund the extra amount immediately as this is urgent."
+              aria-label="Fill billing example">
+              💳 Billing
+            </button>
+            <button class="quick-btn quick-technical" id="quickTechnical"
+              data-text="My app keeps crashing every time I try to login after the latest update. This is completely broken and blocking my work."
+              aria-label="Fill technical example">
+              ⚙️ Technical
+            </button>
+            <button class="quick-btn quick-account" id="quickAccount"
+              data-text="I need to update my email address and phone number linked to my account. Can you help me change these details?"
+              aria-label="Fill account example">
+              👤 Account
+            </button>
+            <button class="quick-btn quick-general" id="quickGeneral"
+              data-text="Can you tell me more about your pricing plans and what features are included in the Pro tier?"
+              aria-label="Fill general example">
+              💬 General
+            </button>
+          </div>
+        </div>
+
+        <div class="card-actions">
+          <button class="btn-clear" id="clearBtn" aria-label="Clear input">
+            Clear
+          </button>
+          <button class="btn-classify" id="classifyBtn" aria-label="Classify email">
+            <span class="btn-text">Classify Email</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Result Card -->
+      <div class="card result-card hidden" id="resultCard" aria-live="polite">
+        <div class="card-header">
+          <h2 class="card-title">
+            <span class="card-icon">🤖</span>
+            Classification Result
+          </h2>
+          <div class="result-timestamp" id="resultTimestamp"></div>
+        </div>
+
+        <div class="result-grid">
+          <!-- Category -->
+          <div class="result-block category-block">
+            <div class="result-label">CATEGORY</div>
+            <div class="result-category" id="resultCategory">
+              <span class="category-icon" id="categoryIcon"></span>
+              <span class="category-name" id="categoryName"></span>
+            </div>
+          </div>
+
+          <!-- Priority -->
+          <div class="result-block priority-block">
+            <div class="result-label">PRIORITY</div>
+            <div class="priority-badge-wrap">
+              <span class="priority-badge" id="priorityBadge"></span>
+            </div>
+          </div>
+
+          <!-- Confidence -->
+          <div class="result-block confidence-block full-width">
+            <div class="confidence-header">
+              <span class="result-label">CONFIDENCE SCORE</span>
+              <span class="confidence-value" id="confidenceValue">0%</span>
+            </div>
+            <div class="confidence-bar-track" aria-label="Confidence meter">
+              <div class="confidence-bar-fill" id="confidenceBar"></div>
+            </div>
+          </div>
+
+          <!-- Score Breakdown -->
+          <div class="result-block scores-block full-width">
+            <div class="result-label">SCORE BREAKDOWN</div>
+            <div class="score-bars" id="scoreBars"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading Card -->
+      <div class="card loading-card hidden" id="loadingCard" aria-label="Classifying..." aria-busy="true">
+        <div class="loading-inner">
+          <div class="loading-ring">
+            <div class="ring"></div>
+            <span class="loading-icon">🤖</span>
+          </div>
+          <p class="loading-text">Analyzing email…</p>
+          <p class="loading-sub">Running NLP pipeline &amp; classification model</p>
+        </div>
+      </div>
+
+      <!-- Error Card -->
+      <div class="card error-card hidden" id="errorCard" role="alert">
+        <div class="error-inner">
+          <span class="error-icon">⚠️</span>
+          <div>
+            <p class="error-title">Classification Failed</p>
+            <p class="error-message" id="errorMessage"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- History Section -->
+      <section class="history-section" id="historySection" aria-label="Classification history">
+        <div class="history-header">
+          <h2 class="history-title">
+            <span>📋</span> Session History
+          </h2>
+          <button class="btn-clear-history" id="clearHistoryBtn" aria-label="Clear history">Clear All</button>
+        </div>
+        <div class="history-list" id="historyList">
+          <div class="history-empty" id="historyEmpty">
+            <span>📭</span>
+            <p>No classifications yet. Paste an email above to get started.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Built with <span class="heart">♥</span> using Python · Flask · scikit-learn · TF-IDF · Logistic Regression</p>
+      <p class="footer-sub">Email-Based Support Ticket Routing System · AI/ML Project</p>
+    </div>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+email_text,category
+I was charged twice for my subscription this month,Billing
+My app keeps crashing every time I try to login,Technical
+I want to update my email address on the account,Account
+Can you tell me more about your pricing plans?,General
+Payment failed but the money was deducted from my card,Billing
+Unable to reset my password via the forgot password link,Technical
+How do I change my username?,Account
+What services do you offer for small businesses?,General
+I received a duplicate charge on my invoice,Billing
+The website is down and I cannot access any page,Technical
+I need to update my billing address,Account
+Do you have a free trial available?,General
+My credit card was billed incorrectly,Billing
+Application crashes after the latest update,Technical
+I would like to merge two accounts into one,Account
+Can I schedule a demo with your team?,General
+Subscription amount debited twice this week,Billing
+I keep getting a 500 internal server error,Technical
+Please help me deactivate my account,Account
+What is the difference between your Basic and Pro plans?,General
+Refund not received after cancellation,Billing
+The mobile app freezes on the dashboard screen,Technical
+I want to add a secondary email to my profile,Account
+How long does the onboarding process take?,General
+I was overcharged for the annual plan,Billing
+API integration is not working as expected,Technical
+Can I transfer my account to another user?,Account
+Tell me about your enterprise offerings,General
+My invoice shows a wrong amount,Billing
+Getting a 404 error on every product page,Technical
+I need to change the phone number linked to my account,Account
+What is your refund policy?,General
+Charged for a plan I never subscribed to,Billing
+Push notifications are not working on my device,Technical
+I want to update my profile picture,Account
+What file formats do you support for import?,General
+I cancelled but was still charged next month,Billing
+The login page is not loading at all,Technical
+How do I delete my account permanently?,Account
+Do you integrate with Slack or Microsoft Teams?,General
+Payment gateway showing an error at checkout,Billing
+Dashboard is not displaying the correct data,Technical
+I need to reset my two-factor authentication,Account
+What are your support hours?,General
+I see an unrecognized charge on my statement,Billing
+My data is not syncing across devices,Technical
+Can I change my subscription email address?,Account
+Is there a mobile app available?,General
+I want a full refund for the last billing cycle,Billing
+The export feature is broken and not downloading files,Technical
+I forgot my account password and cannot log in,Account
+Can you explain how your AI features work?,General
+Invoice was generated with the wrong tax rate,Billing
+Video playback is buffering and not loading properly,Technical
+I need to update my payment method,Account
+What programming languages does your API support?,General
+I was billed after I downgraded my plan,Billing
+Search functionality is returning no results,Technical
+Please help me recover my deleted account,Account
+Is there a community forum or knowledge base?,General
+My subscription renewal failed due to a payment error,Billing
+File upload is stuck at 0% and never completes,Technical
+How do I enable dark mode on the platform?,Account
+Can you provide a product walkthrough video?,General
+I need a VAT invoice for my last payment,Billing
+The notification bell icon is not responding to clicks,Technical
+I want to link my Google account for login,Account
+What is the maximum number of users I can add?,General
+Duplicate transaction appeared on my bank statement,Billing
+Charts and graphs are not rendering on the analytics page,Technical
+Can I have two separate accounts with the same email?,Account
+How do I export my data from the platform?,General
+I was charged for a premium feature I do not use,Billing
+My email integration stopped working after the update,Technical
+I need help recovering access to my locked account,Account
+What security certifications does your platform have?,General
+Refund request submitted 2 weeks ago but no response,Billing
+The API is returning a 401 unauthorized error,Technical
+How do I change my account password?,Account
+Does your platform comply with GDPR?,General
+I see a charge that was supposed to be waived,Billing
+Form submission throws a validation error constantly,Technical
+I want to revoke access for a team member,Account
+Do you offer white-label solutions?,General
+My payment did not go through but I was debited,Billing
+The bulk import tool is crashing mid-upload,Technical
+I need to add an admin user to my organization,Account
+What is your uptime SLA?,General
+Can I get an itemized receipt for all my payments?,Billing
+Clicking on a button does nothing in the settings page,Technical
+How do I link my LinkedIn account to my profile?,Account
+Can I use your platform offline?,General
+The auto-renewal charged me without notification,Billing
+My calendar sync with Google Calendar is broken,Technical
+I need to remove an outdated payment method from my account,Account
+What countries do you support?,General
+I was charged at the old price after a price change,Billing
+Screen reader is not working correctly on your web app,Technical
+I want to set up SSO for my organization,Account
+Do you offer custom plans for nonprofits?,General
+Invoice is missing the company name,Billing
+The dark mode toggle is causing the page to refresh,Technical
+I need a breakdown of all charges this year,Billing
+Image uploads are failing with a timeout error,Technical
+I want to update my company name in account settings,Account
+What is the difference between Admin and Member roles?,General
+I was double charged during the upgrade process,Billing
+My webhook events are not being delivered,Technical
+I need to change the primary owner of the account,Account
+Can you help me understand the dashboard metrics?,General
+The promo code was not applied to my bill,Billing
+PDF export generates a blank document,Technical
+I would like to request a copy of my personal data,Account
+What is the best plan for a startup of 10 people?,General
+I want to dispute a transaction from last month,Billing
+My third-party plugin stopped working after your update,Technical
+I want to close my account and get a full refund,Account
+How does your machine learning model work?,General
+There is a discrepancy in my monthly bill,Billing
+The auto-save feature is not saving my changes,Technical
+I want to add a backup admin to my workspace,Account
+Do you have an affiliate or referral program?,General
+I should not have been charged during my free trial,Billing
+Code editor in the platform is lagging badly,Technical
+I cannot find where to update my address,Account
+Is there a limit on the number of projects I can create?,General
+My payment history is not loading in the billing page,Billing
+Two-factor authentication code is not arriving via SMS,Technical
+I need to merge my personal and company accounts,Account
+What third-party tools do you integrate with?,General
+I see a charge labeled unknown on my statement,Billing
+The mobile app crashes on iOS 17 after the last update,Technical
+I need to change the billing contact email,Account
+How do you handle data backups?,General
+I was charged a setup fee that was supposed to be free,Billing
+Drag and drop functionality is not working in Firefox,Technical
+I locked myself out by entering the wrong PIN too many times,Account
+Can I migrate data from another platform to yours?,General
+An incorrect invoice was sent to my accountant,Billing
+Real-time collaboration is not syncing for my team,Technical
+I want to unsubscribe from all marketing emails,Account
+What analytics and reporting features do you provide?,General
+I need a receipt for my latest payment urgently,Billing
+I keep getting logged out every few minutes,Technical
+Can I invite multiple users via a CSV upload?,Account
+Do you have a status page for service updates?,General
+The system charged me for a canceled seat,Billing
+Images in my reports are missing after the last update,Technical
+I cannot access the settings section of my account,Account
+What are the hardware requirements for your desktop app?,General
+I was not notified before my free trial ended and got billed,Billing
+The progress bar on file uploads never completes,Technical
+I need to set up a sub-account for a client,Account
+How are user roles and permissions managed?,General
+My refund was processed but I have not received the amount,Billing
+Live chat widget is not appearing on the website,Technical
+I want to update the language settings on my profile,Account
+Can I use your platform for educational purposes?,General
+I am seeing charges for users who have been removed,Billing
+The embedded iframe is not loading any content,Technical
+I cannot see the history of changes in my account,Account
+Do you offer volume discounts for large teams?,General
+My payment method expired and the update is not saving,Billing
+Autofill suggestions are not working in the form fields,Technical
+How do I enable email notifications for my account?,Account
+What happens to my data if I cancel my subscription?,General
+I was billed twice within the same billing cycle,Billing
+The search bar is freezing the page when I type fast,Technical
+I need to transfer billing responsibility to another person,Account
+Can I access your API documentation without an account?,General
+The invoice PDF is missing the payment date,Billing
+The settings page keeps throwing a JavaScript error,Technical
+I need to update my VAT number on the account,Account
+What kind of customer support do you provide?,General
+I received an incorrect discount on my renewal,Billing
+My custom domain is not pointing to the platform correctly,Technical
+I want to update the timezone on my account,Account
+Are there any hidden fees in your pricing?,General
+I was charged even though my account was on pause,Billing
+The undo feature is not working in the editor,Technical
+I need to verify my business email for my account,Account
+What data formats can I import into the platform?,General
+I need a corrected invoice for tax filing purposes,Billing
+Collaboration comments are not visible to other users,Technical
+My profile changes are not being saved,Account
+How do I upgrade from a trial to a paid plan?,General
+I want to report an unauthorized charge on my account,Billing
+The dark theme colors are making text unreadable,Technical
+I cannot log in after changing my email address,Account
+Do you have a sandbox environment for testing?,General
