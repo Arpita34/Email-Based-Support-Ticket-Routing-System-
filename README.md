@@ -147,6 +147,3 @@ Classify an email text.
 
 ---
 
-## 🎯 Interview Description
-
-> *"I built an Email-based Ticket Routing System that automatically classifies incoming customer support emails into categories like Billing, Technical Issue, Account Management, and General Queries. I used TF-IDF with bigrams for text representation and Logistic Regression for multi-class classification, achieving ~90% accuracy. The system also detects email urgency (High/Medium/Low priority) using keyword heuristics. I built a Flask REST API for model serving and a premium dark-mode web UI for live demonstration. This system helps automate support workflows and significantly reduce manual routing effort."*
